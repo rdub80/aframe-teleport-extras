@@ -1,12 +1,12 @@
 {
-  "name": "aframe-speech-command-component",
-  "version": "0.4.2",
-  "description": "Speech Command component for A-Frame.",
+  "name": "aframe-teleport-extras",
+  "version": "0.1",
+  "description": "Add-on component to fernandojsg's aframe-teleport-controls empowering desktop & cardboard",
   "main": "index.js",
   "scripts": {
     "build": "browserify examples/main.js -o examples/build.js",
     "dev": "budo examples/main.js:build.js --dir examples --port 8000 --live --open",
-    "dist": "webpack index.js dist/aframe-speech-command-component.js && webpack -p index.js dist/aframe-speech-command-component.min.js",
+    "dist": "webpack index.js dist/aframe-teleport-extras.js && webpack -p index.js dist/aframe-teleport-extras.min.js",
     "lint": "semistandard -v | snazzy",
     "prepublish": "npm run dist",
     "preghpages": "npm run build && shx rm -rf gh-pages && shx mkdir gh-pages && shx cp -r examples/* gh-pages",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lmalave/aframe-speech-command-component.git"
+    "url": "git+https://github.com/rdub80/aframe-teleport-extras.git"
   },
   "keywords": [
     "aframe",
@@ -24,20 +24,20 @@
     "vr",
     "mozvr",
     "webvr",
-    "voice-command"
+    "aframe-teleport-controls",
+    "cardboard"
   ],
-  "author": "Leonardo Malave <leo@malave.tech>",
+  "author": "Roland Dubois <rdub80@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lmalave/aframe-speech-command-component/issues"
+    "url": "https://github.com/rdub80/aframe-teleport-extras/issues"
   },
-  "homepage": "https://github.com/lmalave/aframe-speech-command-component#readme",
+  "homepage": "https://github.com/rdub80/aframe-teleport-extras#readme",
   "devDependencies": {
-    "aframe": "^0.3.2",
+    "aframe": "^0.7.1",
     "browserify": "^13.0.0",
     "budo": "^8.2.2",
     "ghpages": "^0.0.8",
-    "randomcolor": "^0.4.4",
     "semistandard": "^8.0.0",
     "shelljs": "^0.7.0",
     "shx": "^0.1.1",
